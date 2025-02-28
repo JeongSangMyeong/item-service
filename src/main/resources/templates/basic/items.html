@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmls:th:"http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8" />
         <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
@@ -11,10 +11,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-primary float-end" 
-                    onclick="location.href='addForm.html'" 
-                    th:onclick="|location.href='@{/basic/items/add}'|"
-                    type="button">상품 등록</button>
+                    <button class="btn btn-primary float-end" onclick="location.href='addForm.html'" th:onclick="|location.href='@{/basic/items/add}'|" type="button">상품 등록</button>
                 </div>
             </div>
             <hr class="my-4" />
